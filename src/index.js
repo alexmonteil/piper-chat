@@ -2,6 +2,7 @@ const app = require("fastify")({ logger: true });
 const fastifyStatic = require("fastify-static");
 const path = require("path");
 const port = process.env.PORT || 3000;
+const host = "0.0.0.0";
 const Filter = require("bad-words");
 const { generateMessage, generateLocationMessage } = require("./utils/messages");
 const { addUser, removeUser, getUser, getUsersInRoom } = require("./utils/users");
@@ -118,7 +119,7 @@ app.ready(err => {
 });
 
 
-app.listen(port, () => {
+app.listen(port, host, () => {
     console.log(`Server running on port ${port}`);
 });
 
