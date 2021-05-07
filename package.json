@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "bad-words": "^3.0.4",
+    "fastify": "^3.15.1",
+    "fastify-socket.io": "^2.0.0",
+    "fastify-static": "^4.0.1"
+  },
+  "name": "piper-chat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.js -e js,html,css"
+  },
+  "author": "Alex Monteil",
+  "license": "ISC",
+  "description": ""
+}
